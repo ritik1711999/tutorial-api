@@ -20,7 +20,7 @@ const getAllTuts = async (req, res) => {
 const getTutById = async (req, res) => {
   const { id: tutorialId } = req.params;
   const { id: userId } = req.user;
-  tutorial = await Tutorial.findOne({
+  const tutorial = await Tutorial.findOne({
     where: { id: tutorialId, userId: userId },
   });
   if (!tutorial) {
