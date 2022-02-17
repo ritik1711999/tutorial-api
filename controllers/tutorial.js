@@ -3,7 +3,7 @@ const { StatusCodes } = require("http-status-codes");
 const { BadRequestError, NotFoundError } = require("../errors");
 
 const getAllTuts = async (req, res) => {
-  const tutorials = await Tutorial.findAll({
+  tutorials = await Tutorial.findAll({
     include: [
       {
         model: User,
