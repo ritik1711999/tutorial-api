@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js",
     "lint": "eslint --fix .",
-    "pre-commit": "npm run lint",
-    "pre-push": "npm run lint"
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
